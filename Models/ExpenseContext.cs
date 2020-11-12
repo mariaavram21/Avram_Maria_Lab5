@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Avram_Maria_Lab5;
+using Avram_Maria_Lab5.Models;
 
 
 namespace Avram_Maria_Lab5.Models
@@ -15,5 +16,7 @@ namespace Avram_Maria_Lab5.Models
         }
         public DbSet<Expense> Expense { get; set; }
         public DbSet<ExpenseDTO> ExpenseDTO { get; set; }
+        public DbSet<Budget> Budget { get; set; }
+
     }
 }
